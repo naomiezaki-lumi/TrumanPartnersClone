@@ -30,3 +30,7 @@ Route::get('/services', function () {
 Route::get('/tru-insights', function(){
     return view('tru-insights');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
