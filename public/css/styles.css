@@ -1,0 +1,620 @@
+/* 
+General Style
+Page Title
+Logo
+Hamburger Menu
+Navigation
+Footer
+Slider
+Home - First Section
+Home - Second Section
+Home - Third Section - Parallax
+Home - Fourth Section
+Contact Us - Second Section
+About Us - Second Section
+Services - Second Section
+Tru Insights - Second Section
+Sidebar Blogs
+*/
+
+
+/*General Style*/
+body{
+    color: #727272;
+}
+
+.pull-right{
+    float:right !important;
+}
+
+.pull-left{
+    float:left !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+h3{
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+p {
+    font: 14px 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+a{
+    text-decoration: none !important;
+    
+}
+
+/*Page Title*/
+.page-title{
+    background: #1a3560 url('/images/tru-footer-graph3.png') no-repeat center bottom;
+    padding: 40px 0px;
+}
+
+.page-title h1 {
+    font-size: 32px;
+    font-weight: 200 !important;
+    margin-bottom: 0px;
+    color: #ffda3d;
+}
+
+.page-title .pagenation{
+    float: right;
+    font-size: 12px;
+    text-align: left;
+    font-weight: normal;
+    color: #e3e3e3;
+    margin-top: 1em;
+}
+
+.page-title .pagenation a{
+    color: #ffda3d;
+}
+
+.page-title .pagenation i {
+    color: #999;
+    margin: 0px 2px 0px 2px;
+}
+
+@media(max-width:767px){
+    .page-title .pagenation{
+        float: left;
+    }
+}
+
+
+/* Logo */
+.logo, .navbar{
+    display: inline-block;
+}
+
+.logo{
+    width:25%;
+}
+
+.logo-a{
+    min-height: 5em;
+}
+
+@media only screen and (max-width: 479px){ /*For mobile view*/
+    .logo {
+        width: 90%;
+        margin-top: 0px;
+    }
+}
+
+
+/*Hamburger Menu*/
+.navbar-toggler{
+    background-color: #272727;
+    color: white;
+    width: 12em;
+}
+
+.navbar-toggler i{
+    color:white !important;
+    float: right;
+}
+
+.navbar-toggler span{
+    float: left;
+    font-size: 14pt;
+}
+
+/* Navigation */
+.header{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+}
+
+.header ul.navbar-nav>li>a {
+    color: #1a3560;
+}
+
+.header ul.navbar-nav>li>a.active,
+.header ul.navbar-nav>li>a:hover {
+    background: #ffda3d;
+    color: #1a3560;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: .5rem 1rem;
+}
+
+@media (max-width: 767px){ /*For Extra Small Devices, Phones*/
+    .header .navbar .container{
+        float: right;
+        width: 15em;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px){ /*For Small Devices, Tablets*/
+    .header .navbar .container{
+        float: right;
+        width: 30em;
+    }
+
+    .navbar-toggler{
+        width: 30em;
+    }
+}
+
+@media (min-width : 992px) and (max-width: 1199px){ /*For Medium Devices, Desktops*/
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: .5rem 0.5rem;
+    }
+}
+
+/* Footer */
+.footer{
+    background: url('/images/tru-footer-graph3.png') no-repeat center bottom;
+    padding: 95px 0px 0px 0px;
+}
+
+.copyright_info{
+    float: left;
+    padding: 30px 0px 25px 0px;
+    margin: 70px 0px 0px 0px;
+    width: 100%;
+    color: #727272;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul.address-ul{
+    float: left;
+    list-style: none;
+    padding-left:0;
+}
+
+.footer h4{
+    color: #ffda3d;
+}
+
+.footer p, .footer a{
+    color: white;
+}
+
+.copyright-info{
+    margin-top: 6em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.copyright-info, .copyright-info a{
+    background: white;
+    color: #999;
+    font-size: 12px;
+}
+
+/*Slider*/
+div.slider{
+    width:100%;
+    height:20%;
+    max-height:1400px;
+}
+
+.carousel-indicators li{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+/*Home - First Section*/
+.home-section1 .carousel-caption{
+    top: 7em;
+}
+.home-section1 h1, .home-section1 p{
+    color: #1a3560;
+}
+
+.home-section1 p{
+    font-size: 17.4px;
+}
+
+.home-section1 h1{
+    font-weight: bolder !important;
+}
+
+@media (max-width: 767px){ /*For Extra Small Devices, Phones*/
+    .home-section1 .carousel-caption{
+        top: 1em;
+    }
+    
+    .home-section1 p{
+        font-size: 5pt;
+        line-height: 10px;
+    }
+    
+    .home-section1 h1{
+        font-size: 12pt;
+        font-weight: bolder !important;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px){ /*For Small Devices, Tablets*/
+    .home-section1 .carousel-caption{
+        top: 2em;
+    }
+
+    .home-section1 p{
+        font-size: 9pt;
+        line-height: 18px;
+    }
+    
+    .home-section1 h1{
+        font-size: 20pt;
+        font-weight: bolder !important;
+    }
+}
+
+
+/*Home - Second Section*/
+
+.second-section-home{
+    background-color: #193560;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+}
+
+.second-section-home img{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.second-section-home .title h3{
+    width: 6em;
+    display: inline-block;
+    color: white;
+}
+
+.second-section-home .content{
+    margin-left: 2.5em;
+    color: white;
+}
+
+.margin_top7 {
+    width: 100%;
+    margin-top: 70px;
+}
+
+@media (max-width: 767px){ /*for Extra Small Devices, Phones*/
+    .second-section-home .col-md-4{
+        margin-bottom: 40px;
+    }
+    .margin_top7 {
+        margin-top: 0px !important;
+    }
+}
+
+
+/*Home - Third Section - Parallax*/
+.parallax_section4 {
+    width: 100%;
+    text-align: center;
+    padding: 140px 0px;
+    background: #333 url('/images/investing-header.jpg');
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sec2 {
+    text-shadow: 2px 2px 4px black;
+}
+
+.parallax_section4 h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 38px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.parallax_section4 p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.button.transp2 {
+    background: #1a3560;
+}
+
+.button.transp2 {
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 50px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+
+/*Home - Fourth Section*/
+.features_sec4 {
+    position: relative;
+    z-index: 9;
+    background: #eee;
+    width: 100%;
+    padding: 115px 0px;
+}
+
+h3.unline {
+    float: left;
+    margin-bottom: 40px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #949494;
+}
+
+.features_sec4 .lblogs {
+    float: left;
+    width: 43%;
+    margin-right: 7%;
+}
+
+.features_sec4 .lblogs .lbimg img {
+    float: left;
+    height: auto;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.features_sec4 .lblogs .lbimg span {
+    background: #1a3560;
+}
+
+.features_sec4 .lblogs .lbimg span {
+    float: left;
+    width: 40px;
+    height: 50px;
+    font-size: 18px;
+    color: #e3e3e3;
+    margin-top: -73px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.features_sec4 .lblogs .lbimg span strong {
+    text-transform: uppercase;
+}
+
+.features_sec4 .lblogs .lbimg span strong {
+    display: block;
+    font-size: 10px;
+    color: #e3e3e3;
+    background: #3c3c3c;
+    font-weight: normal;
+}
+
+.features_sec4 .lblogs p {
+    clear: both;
+    float: left;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.features_sec4 a.remobut {
+    color: #1a3560;
+}
+
+.features_sec4 a.remobut:hover {
+    background-color: white;
+    text-decoration: none;
+}
+
+.features_sec4 a.remobut {
+    float: left;
+    text-transform: uppercase;
+    border: 1px solid #e1e1e1;
+    padding: 9px 22px;
+    margin-right: 2px;
+    border-radius: 3px;
+}
+
+.features_sec4 .slide-box {
+    float: left;
+    width: 100%;
+    padding-bottom: 35px;
+    border-bottom: 4px solid #d3d3d3;
+}
+
+.features_sec4 .slide-box {
+    float: left;
+    width: 100%;
+    padding-bottom: 35px;
+    border-bottom: 4px solid #d3d3d3;
+}
+
+.features_sec4 .slide-box .ppimg {
+    float: left;
+    width: 100%;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    background: url('/images/h-arrow-line1.png') no-repeat left bottom;
+}
+
+.features_sec4 .slide-box .ppimg img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.features_sec4 .slide-box .ppimg h6 {
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.features_sec4 .slide-box .ppimg h6 em {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.carousel-indicators.truman-slide-indicator {
+    bottom: -50px;
+    text-align: left;
+}
+
+
+/*Contact Us - Second Section*/
+
+.contact-us-section2{
+    padding: 120px 0px;
+}
+
+.contact-us-section2 h2{
+    display: block;
+    padding: 0px 0px 9px 0px;
+    margin-bottom: 13px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #272727;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.contact-us-section2 .address-info {
+    float: left;
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 10px 20px;
+    width: 99%;
+    margin-bottom: 40px;
+}
+
+.contact-us-section2 ul li {
+    list-style: none;
+}
+
+.contact-us-section2 .col{
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.contact-us-section2 .input input,
+.contact-us-section2 textarea{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 39px;
+    padding: 8px 10px;
+    outline: none;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    background: #fff;
+    font: 15px/19px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #404040;
+    -webkit-appearance: none;
+}
+
+.contact-us-section2 textarea{
+    height: auto;
+    resize: none;
+}
+
+.contact-us-section2 .button{
+    background-color: #272727;
+    opacity: 0.8;
+    float: left;
+    height: 39px;
+    overflow: hidden;
+    margin: 0px 0 0 0px;
+    padding: 0 25px;
+    outline: none;
+    border: 0;
+    font: 300 15px/39px 'Open Sans', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*About Us - Second Section*/
+.about-us-section2{
+    padding: 120px 0px;
+}
+
+/*Services - Second Section*/
+.services-section2{
+    padding: 120px 0px;
+}
+
+/*Tru Insights - Second Section*/
+.tru-insights-section2{
+    padding: 45px 0px 120px 0px;
+}
+.tru-insights-section2 .col{
+    padding-top: 45px;
+}
+
+.tru-insights-section2 .side-bar{
+    padding-top: 105px;
+}
+
+.tru-insights-section2 a.button {
+    float: left;
+    text-transform: uppercase;
+    border: 1px solid #e1e1e1;
+    padding: 9px 22px;
+    margin-right: 2px;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #1a3560;
+}
+
+
+/*Sidebar Blogs*/
+.side-blog{
+    margin-bottom: 10px;
+}
+
+.mtphr-dnt-tick-paging {
+    text-align: center;
+    list-style: none;
+}
+
+.side-blog h4 a{
+    color: #333333
+}
