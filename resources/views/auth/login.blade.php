@@ -1,11 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- First Section -->
+
+
+<div class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="">Log In</h1>
+            </div>
+            <div class="col-md-3">
+                <span class="pagenation">
+                    &nbsp;
+                    <a href="/">Home</a> 
+                    <i> / </i> 
+                    Login
+                </span>
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+
+<!-- End of First Section -->
+
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <div class="card" style = "border: 0;">
+                <div class="card-header"style = "text-align: center; font-size: 30px; color:black;">Welcome Back to Truman Partners</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -52,18 +79,20 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-8 offset-md-4" style = "">
+                                <button type="submit" class="btn btn-primary" style = "width: 330px;background-color:#214278;">
                                     {{ __('Login') }}
                                 </button>
-
+                                
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link"  href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
                             </div>
+                           
                         </div>
+                     
                     </form>
                 </div>
             </div>

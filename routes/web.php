@@ -37,10 +37,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>['auth','admin']], function(){
 
-});
-
-// if naay admin page
+    // if naay admin page
 // Route::get('/admin', function(){
 //     return view ('admin.dashboard');
 // });
+
+});
+
+
 
