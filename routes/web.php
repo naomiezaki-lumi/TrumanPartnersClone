@@ -45,4 +45,10 @@ Route::group(['middleware'=>['auth','admin']], function(){
 });
 
 
+// Contact Us Routes //
+
+Route::get('contact-us', 'ContactUsController@ContactUs');
+Route::post('contact-us',['as'=>'contactus.store', 'uses' => 'ContactUsController@ContactUsPost']);
+
+
 
