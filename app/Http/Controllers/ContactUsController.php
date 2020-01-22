@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ContactUs;
+use Mail;
 
 class ContactUsController extends Controller
 {
@@ -82,7 +84,7 @@ class ContactUsController extends Controller
         //
     }
 
-    public function contactUS()
+    public function ContactUs()
    {
        return view('ContactUs');
    }
