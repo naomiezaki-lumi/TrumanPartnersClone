@@ -108,7 +108,7 @@ class ContactUsController extends Controller
         ),function($message){
 
             $message->from('dreadlord12318@gmail.com');
-            $message->to('dreadlord12318@gmail.com', 'Admin')->subject('Cloudways Feedback');
+            $message->to('janly321edjec@gmail.com', 'Admin')->subject('Contact Us');
             
 
         });
