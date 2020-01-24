@@ -44,6 +44,10 @@ Route::group(['middleware'=>['auth','admin']], function(){
 
 });
 
+// Apply Now Routes
+Route::get('/apply-now', function () {
+    return view('applynow');
+});
 
 // Contact Us Routes //
 

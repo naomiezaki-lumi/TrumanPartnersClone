@@ -36,13 +36,13 @@
             <div class="form-group row">
                 <div class="form-group col-md-6  {{ $errors->has('name') ? 'has-error' : '' }}">
                     {{ Form::label('Name:') }}
-                    {{ Form::text('name', old('name'), ['class'=>'form-control', 'placeholder'=>'Enter Name']) }}
+                    {{ Form::text('name', old('name'), ['class'=>'form-control']) }}
                     <span class="text-danger">{{ $errors->first('name') }}</span>
                 </div>
             
                 <div class="form-group col-md-6 {{ $errors->has('email') ? 'has-error' : '' }}">
                     {{ Form::label('Email:') }}
-                    {{ Form::text('email', old('email'), ['class'=>'form-control', 'placeholder'=>'Enter Email']) }}
+                    {{ Form::text('email', old('email'), ['class'=>'form-control']) }}
                     <span class="text-danger">{{ $errors->first('email') }}</span>
                 </div>
             </div>
@@ -51,14 +51,14 @@
                 <div class="form-group col-md-12  {{ $errors->has('subject') ? 'has-error' : '' }}">
                     {{ Form::label('Subject:') }}
                     {{ Form::text('subject', old('subject'), ['class'=>'form-control']) }}
-                    <span class="text-danger">{{ $errors->first('message') }}</span>
+                    <span class="text-danger">{{ $errors->first('subject') }}</span>
                 </div>
             </div>
         
             <div class="form-group row">
                 <div class="form-group col-md-12  {{ $errors->has('message') ? 'has-error' : '' }}">
                     {{ Form::label('Message:') }}
-                    {{ Form::textarea('message', old('message'), ['class'=>'form-control', 'placeholder'=>'Enter Message']) }}
+                    {{ Form::textarea('message', old('message'), ['class'=>'form-control']) }}
                     <span class="text-danger">{{ $errors->first('message') }}</span>
                 </div>
             </div>

@@ -18,7 +18,7 @@
                             <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Apply now</a>
+                            <a class="nav-link" href="/apply-now">Apply now</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about">About Truman</a>
